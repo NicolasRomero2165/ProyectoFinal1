@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="datos.css">
+    <title>Datos de la persona</title>
+</head>
+<body>
+    <p id="datos" class="formulario">
+        
+    </p>
+
+    <script>
+        const persona1 = '{"nombre":"Nicolas", "apellido":"Romero", "edad":"27", "autos":["Fiat 147","Trafic"], "ciudad":"Lanus", "provincia":"Buenos Aires", "pais":"Argentina"}';
+        const obj = JSON.parse(persona1)
+        console.log(obj);
+        document.getElementById("datos").innerHTML =
+        "Nombre: "+obj.nombre+
+        "Apellido: "+obj.apellido+
+        "Edad: "+obj.edad+
+        "Autos: "+obj.autos+
+        "Ciudad: "+obj.ciudad+
+        "Provincia: "+obj.provincia+
+        "País: "+obj.pais;
+    </script> 
+</body>
+</html>
