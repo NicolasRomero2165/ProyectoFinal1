@@ -1,0 +1,9 @@
+Nombre y Apellido              Foto
+Nacimiento
+Dirección
+Teléfono
+Email
+
+Experiencia
+
+Habilidades
