@@ -56,7 +56,7 @@
                                 celular:"1164046773", 
                                 correo:"nicolas.romero.2165@gmail.com"},
                         exp:{trabajo3:{
-                                    lugar:"Agencia Hípica La Tablada", 
+                                    lugar:"Amoblamientos Pane", 
                                     fecha: "Sep 2020 - Dic 2022", 
                                     puesto:"Chofer", 
                                     tareas:["Fletes"," Atención a clientes"," Cadete",]},
@@ -88,19 +88,19 @@
             document.getElementById("nombre").innerHTML = persona1.info.nombre + " " + persona1.info.apellido;
             document.getElementById("edad").innerHTML = persona1.info.edad + " años";
             document.getElementById("direccion").innerHTML = persona1.info.direccion + ", " + persona1.info.ciudad;
-            document.getElementById("celular").innerHTML = persona1.info.celular;
-            document.getElementById("correo").innerHTML = persona1.info.correo;
+            document.getElementById("celular").innerHTML = "Cel: " + persona1.info.celular;
+            document.getElementById("correo").innerHTML = "Correo: " + persona1.info.correo;
             document.getElementById("trabajo3").innerHTML = persona1.exp.trabajo3.lugar + ", " + persona1.exp.trabajo3.fecha;
             document.getElementById("puestoT3").innerHTML = persona1.exp.trabajo3.puesto;
             document.getElementById("tareasT30").innerHTML = persona1.exp.trabajo3.tareas["0"];
             document.getElementById("tareasT31").innerHTML = persona1.exp.trabajo3.tareas["1"];
             document.getElementById("tareasT32").innerHTML = persona1.exp.trabajo3.tareas["2"];
-            document.getElementById("trabajo2").innerHTML = persona1.exp.trabajo2.lugar + ", " + persona1.exp.trabajo3.fecha;
+            document.getElementById("trabajo2").innerHTML = persona1.exp.trabajo2.lugar + ", " + persona1.exp.trabajo2.fecha;
             document.getElementById("puestoT2").innerHTML = persona1.exp.trabajo2.puesto;
             document.getElementById("tareasT20").innerHTML = persona1.exp.trabajo2.tareas["0"];
             document.getElementById("tareasT21").innerHTML = persona1.exp.trabajo2.tareas["1"];
             document.getElementById("tareasT22").innerHTML = persona1.exp.trabajo2.tareas["2"];
-            document.getElementById("trabajo1").innerHTML = persona1.exp.trabajo1.lugar + ", " + persona1.exp.trabajo3.fecha;
+            document.getElementById("trabajo1").innerHTML = persona1.exp.trabajo1.lugar + ", " + persona1.exp.trabajo1.fecha;
             document.getElementById("puestoT1").innerHTML = persona1.exp.trabajo1.puesto;
             document.getElementById("tareasT10").innerHTML = persona1.exp.trabajo1.tareas["0"];
             document.getElementById("tareasT11").innerHTML = persona1.exp.trabajo1.tareas["1"];
