@@ -9,14 +9,64 @@
 </head>
 <body>
    <!--Proyecto realizado por Rodrigo Nicolás Romero-->
-   <script>
-    var persona1 = {info:{nombre:"Nicolas", apellido:"Romero", edad:"27", ciudad:"Lanus", direccion:"Bv. de los Italianos 1287", celular:"1164046773", corre:"nicolas.romero.2165@gmail.com"},
-                    exp:{trabajo1:{lugar:"Agencia Hípica La Tablada", fecha: "Sep 2020 - Dic 2022", puesto:"Chofer", tareas:["Fletes","Atención a clientes","Cadete",]},
-                        trabajo2:{lugar:"La Camorra", fecha: "Abr 2018 - Ago 2020", puesto:"Mesero", tareas:["Mesero","Atención y servicio a clientes","Bachero",]},
-                        trabajo3:{lugar:"Agencia Hípica La Tablada", fecha: "Mar 2016 - Mar 2018", puesto:"Encargado del bufet", tareas:["Cajero y administrador","Atención y servicio a clientes","Barista","Ayudante de cocina y bachero",]},},
-                    hab:[]};
-        console.log(persona1)
-    const persona = JSON.stringify(persona1)
+    <header><h1>CREA TU CV FÁCIL Y SENCILLO</h1></header>
+    <nav>
+    <p>En el siguiente ejemplo, te mostraremos de lo que es capaz de realizar nuestra página con solo ingresar tus datos más adelante.</p>
+
+    <h2 id="nombre"></h2>
+    <p id="edad"></p>
+    <p id="direccion"></p>
+    <p id="celular"></p>
+    <p id="correo"></p>
+    <h3>EXPERIENCIA</h3>
+    <p id="trabajo3"></p>
+    <p id="puestoT3"></p>
+    <li id="tareasT3"></li>
+    <p id="trabajo2"></p>
+    <p id="puestoT2"></p>
+    <li id="tareasT2"></li>
+    <p id="trabajo1"></p>
+    <p id="puestoT1"></p>
+    <li id="tareasT1"></li>
+    <h3>ESTUDIOS</h3>
+    <p id="lugar1"></p>
+    <p id="titulo1"></p>
+    <p id="lugar2"></p>
+    <p id="titulo2"></p>
+    <h3>CONOCIMIENTOS</h3>
+    <li id="conocimientos"></li>
+    </nav>
+
+    <script>
+        const persona1 = {info:{nombre:"Nicolas", apellido:"Romero", edad:"27", ciudad:"Lanus", direccion:"Bv. de los Italianos 1287", celular:"1164046773", correo:"nicolas.romero.2165@gmail.com"},
+                        exp:{trabajo3:{lugar:"Agencia Hípica La Tablada", fecha: "Sep 2020 - Dic 2022", puesto:"Chofer", tareas:["Fletes"," Atención a clientes"," Cadete",]},
+                            trabajo2:{lugar:"La Camorra", fecha: "Abr 2018 - Ago 2020", puesto:"Mesero", tareas:["Mesero"," Atención y servicio a clientes", " Bachero",]},
+                            trabajo1:{lugar:"Agencia Hípica La Tablada", fecha: "Mar 2016 - Mar 2018", puesto:"Encargado del bufet", tareas:["Cajero y administrador"," Atención y servicio a clientes"," Barista"," Ayudante de cocina y bachero",]},},
+                        est:{estudio2:{lugar:"Liceo Británico - sede Lanus",fecha:"2018 - 2022",titulo:"Nivel 8 Completado"},
+                            estudio1:{lugar:"San Vicente de Paúl",fecha:"2006 - 2018",titulo:"Bachiller en Ciencias Naturales"}},
+                        hab:["Amplio manejo del paquete Office: Word y Excel"," Inglés Intermedio"," Equipo de cómputo: Sistema operativo, hardware, impresora"],};
+            console.log(persona1)
+        const persona = JSON.stringify(persona1)
+            document.getElementById("nombre").innerHTML = persona1.info.nombre + " " + persona1.info.apellido;
+            document.getElementById("edad").innerHTML = persona1.info.edad + " años";
+            document.getElementById("direccion").innerHTML = persona1.info.direccion + ", " + persona1.info.ciudad;
+            document.getElementById("celular").innerHTML = persona1.info.celular;
+            document.getElementById("correo").innerHTML = persona1.info.correo;
+            document.getElementById("trabajo3").innerHTML = persona1.exp.trabajo3.lugar + ", " + persona1.exp.trabajo3.fecha;
+            document.getElementById("puestoT3").innerHTML = persona1.exp.trabajo3.puesto;
+            document.getElementById("tareasT3").innerHTML = persona1.exp.trabajo3.tareas;
+            document.getElementById("trabajo2").innerHTML = persona1.exp.trabajo2.lugar + ", " + persona1.exp.trabajo3.fecha;
+            document.getElementById("puestoT2").innerHTML = persona1.exp.trabajo2.puesto;
+            document.getElementById("tareasT2").innerHTML = persona1.exp.trabajo2.tareas;
+            document.getElementById("trabajo1").innerHTML = persona1.exp.trabajo1.lugar + ", " + persona1.exp.trabajo3.fecha;
+            document.getElementById("puestoT1").innerHTML = persona1.exp.trabajo1.puesto;
+            document.getElementById("tareasT1").innerHTML = persona1.exp.trabajo1.tareas["0"];
+            document.getElementById("lugar1").innerHTML = persona1.est.estudio2.lugar + ", " + persona1.est.estudio2.fecha;
+            document.getElementById("titulo1").innerHTML = persona1.est.estudio2.titulo;
+            document.getElementById("lugar2").innerHTML = persona1.est.estudio1.lugar + ", " + persona1.est.estudio1.fecha;
+            document.getElementById("titulo2").innerHTML = persona1.est.estudio1.titulo;
+            document.getElementById("conocimientos").innerHTML = persona1.hab;
     </script>
+    
 </body>
 </html>
