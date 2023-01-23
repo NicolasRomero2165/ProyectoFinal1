@@ -21,18 +21,25 @@
     <h3>EXPERIENCIA</h3>
     <p id="trabajo3"></p>
     <p id="puestoT3"></p>
-    <li id="tareasT3"></li>
+    <li id="tareasT30"></li>
+    <li id="tareasT31"></li>
+    <li id="tareasT32"></li>
     <p id="trabajo2"></p>
     <p id="puestoT2"></p>
-    <li id="tareasT2"></li>
+    <li id="tareasT20"></li>
+    <li id="tareasT21"></li>
+    <li id="tareasT22"></li>
     <p id="trabajo1"></p>
     <p id="puestoT1"></p>
-    <li id="tareasT1"></li>
+    <li id="tareasT10"></li>
+    <li id="tareasT11"></li>
+    <li id="tareasT12"></li>
+    <li id="tareasT13"></li>
     <h3>ESTUDIOS</h3>
-    <p id="lugar1"></p>
-    <p id="titulo1"></p>
     <p id="lugar2"></p>
     <p id="titulo2"></p>
+    <p id="lugar1"></p>
+    <p id="titulo1"></p>
     <h3>CONOCIMIENTOS</h3>
     <li id="conocimientos"></li>
     </nav>
@@ -54,17 +61,24 @@
             document.getElementById("correo").innerHTML = persona1.info.correo;
             document.getElementById("trabajo3").innerHTML = persona1.exp.trabajo3.lugar + ", " + persona1.exp.trabajo3.fecha;
             document.getElementById("puestoT3").innerHTML = persona1.exp.trabajo3.puesto;
-            document.getElementById("tareasT3").innerHTML = persona1.exp.trabajo3.tareas;
+            document.getElementById("tareasT30").innerHTML = persona1.exp.trabajo3.tareas["0"];
+            document.getElementById("tareasT31").innerHTML = persona1.exp.trabajo3.tareas["1"];
+            document.getElementById("tareasT32").innerHTML = persona1.exp.trabajo3.tareas["2"];
             document.getElementById("trabajo2").innerHTML = persona1.exp.trabajo2.lugar + ", " + persona1.exp.trabajo3.fecha;
             document.getElementById("puestoT2").innerHTML = persona1.exp.trabajo2.puesto;
-            document.getElementById("tareasT2").innerHTML = persona1.exp.trabajo2.tareas;
+            document.getElementById("tareasT20").innerHTML = persona1.exp.trabajo2.tareas["0"];
+            document.getElementById("tareasT21").innerHTML = persona1.exp.trabajo2.tareas["1"];
+            document.getElementById("tareasT22").innerHTML = persona1.exp.trabajo2.tareas["2"];
             document.getElementById("trabajo1").innerHTML = persona1.exp.trabajo1.lugar + ", " + persona1.exp.trabajo3.fecha;
             document.getElementById("puestoT1").innerHTML = persona1.exp.trabajo1.puesto;
-            document.getElementById("tareasT1").innerHTML = persona1.exp.trabajo1.tareas["0"];
-            document.getElementById("lugar1").innerHTML = persona1.est.estudio2.lugar + ", " + persona1.est.estudio2.fecha;
-            document.getElementById("titulo1").innerHTML = persona1.est.estudio2.titulo;
-            document.getElementById("lugar2").innerHTML = persona1.est.estudio1.lugar + ", " + persona1.est.estudio1.fecha;
-            document.getElementById("titulo2").innerHTML = persona1.est.estudio1.titulo;
+            document.getElementById("tareasT10").innerHTML = persona1.exp.trabajo1.tareas["0"];
+            document.getElementById("tareasT11").innerHTML = persona1.exp.trabajo1.tareas["1"];
+            document.getElementById("tareasT12").innerHTML = persona1.exp.trabajo1.tareas["2"];
+            document.getElementById("tareasT13").innerHTML = persona1.exp.trabajo1.tareas["3"];
+            document.getElementById("lugar2").innerHTML = persona1.est.estudio2.lugar + ", " + persona1.est.estudio2.fecha;
+            document.getElementById("titulo2").innerHTML = persona1.est.estudio2.titulo;
+            document.getElementById("lugar1").innerHTML = persona1.est.estudio1.lugar + ", " + persona1.est.estudio1.fecha;
+            document.getElementById("titulo1").innerHTML = persona1.est.estudio1.titulo;
             document.getElementById("conocimientos").innerHTML = persona1.hab;
     </script>
     
