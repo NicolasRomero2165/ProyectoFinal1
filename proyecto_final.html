@@ -18,42 +18,73 @@
     <p id="direccion"></p>
     <p id="celular"></p>
     <p id="correo"></p>
-    <h3>EXPERIENCIA</h3>
-    <p id="trabajo3"></p>
-    <p id="puestoT3"></p>
+    <h2>EXPERIENCIA</h2>
+    <h3 id="trabajo3"></h3>
+    <h4 id="puestoT3"></h4>
     <li id="tareasT30"></li>
     <li id="tareasT31"></li>
     <li id="tareasT32"></li>
-    <p id="trabajo2"></p>
-    <p id="puestoT2"></p>
+    <h3 id="trabajo2"></h3>
+    <h4 id="puestoT2"></h4>
     <li id="tareasT20"></li>
     <li id="tareasT21"></li>
     <li id="tareasT22"></li>
-    <p id="trabajo1"></p>
-    <p id="puestoT1"></p>
+    <h3 id="trabajo1"></h3>
+    <h4 id="puestoT1"></h4>
     <li id="tareasT10"></li>
     <li id="tareasT11"></li>
     <li id="tareasT12"></li>
     <li id="tareasT13"></li>
-    <h3>ESTUDIOS</h3>
-    <p id="lugar2"></p>
+    <h2>ESTUDIOS</h2>
+    <h3 id="lugar2"></h3>
     <p id="titulo2"></p>
-    <p id="lugar1"></p>
+    <h3 id="lugar1"></h3>
     <p id="titulo1"></p>
-    <h3>CONOCIMIENTOS</h3>
-    <li id="conocimientos"></li>
+    <h2>CONOCIMIENTOS</h2>
+    <li id="conocimientos0"></li>
+    <li id="conocimientos1"></li>
+    <li id="conocimientos2"></li>
     </nav>
 
     <script>
-        const persona1 = {info:{nombre:"Nicolas", apellido:"Romero", edad:"27", ciudad:"Lanus", direccion:"Bv. de los Italianos 1287", celular:"1164046773", correo:"nicolas.romero.2165@gmail.com"},
-                        exp:{trabajo3:{lugar:"Agencia Hípica La Tablada", fecha: "Sep 2020 - Dic 2022", puesto:"Chofer", tareas:["Fletes"," Atención a clientes"," Cadete",]},
-                            trabajo2:{lugar:"La Camorra", fecha: "Abr 2018 - Ago 2020", puesto:"Mesero", tareas:["Mesero"," Atención y servicio a clientes", " Bachero",]},
-                            trabajo1:{lugar:"Agencia Hípica La Tablada", fecha: "Mar 2016 - Mar 2018", puesto:"Encargado del bufet", tareas:["Cajero y administrador"," Atención y servicio a clientes"," Barista"," Ayudante de cocina y bachero",]},},
-                        est:{estudio2:{lugar:"Liceo Británico - sede Lanus",fecha:"2018 - 2022",titulo:"Nivel 8 Completado"},
-                            estudio1:{lugar:"San Vicente de Paúl",fecha:"2006 - 2018",titulo:"Bachiller en Ciencias Naturales"}},
-                        hab:["Amplio manejo del paquete Office: Word y Excel"," Inglés Intermedio"," Equipo de cómputo: Sistema operativo, hardware, impresora"],};
+        const persona1 = {
+                        info:{nombre:"Nicolas", 
+                                apellido:"Romero", 
+                                edad:"27", 
+                                ciudad:"Lanus", 
+                                direccion:"Bv. de los Italianos 1287", 
+                                celular:"1164046773", 
+                                correo:"nicolas.romero.2165@gmail.com"},
+                        exp:{trabajo3:{
+                                    lugar:"Agencia Hípica La Tablada", 
+                                    fecha: "Sep 2020 - Dic 2022", 
+                                    puesto:"Chofer", 
+                                    tareas:["Fletes"," Atención a clientes"," Cadete",]},
+                            trabajo2:{
+                                    lugar:"La Camorra", 
+                                    fecha: "Abr 2018 - Ago 2020", 
+                                    puesto:"Mesero", 
+                                    tareas:["Mesero"," Atención y servicio a clientes", " Bachero",]},
+                            trabajo1:{
+                                    lugar:"Agencia Hípica La Tablada", 
+                                    fecha: "Mar 2016 - Mar 2018", 
+                                    puesto:"Encargado del bufet", 
+                                    tareas:["Cajero y administrador"," Atención y servicio a clientes"," Barista"," Ayudante de cocina y bachero",]},},
+                        est:{
+                            estudio2:{
+                                lugar:"Liceo Británico - sede Lanus",
+                                fecha:"2018 - 2022",
+                                titulo:"Nivel 8 Completado"},
+                            estudio1:{
+                                lugar:"San Vicente de Paúl",
+                                fecha:"2006 - 2018",
+                                titulo:"Bachiller en Ciencias Naturales"}},
+                        hab:["Amplio manejo del paquete Office: Word y Excel"," Inglés Intermedio"," Equipo de cómputo: Sistema operativo, hardware, impresora"],
+                    };
             console.log(persona1)
+
         const persona = JSON.stringify(persona1)
+
             document.getElementById("nombre").innerHTML = persona1.info.nombre + " " + persona1.info.apellido;
             document.getElementById("edad").innerHTML = persona1.info.edad + " años";
             document.getElementById("direccion").innerHTML = persona1.info.direccion + ", " + persona1.info.ciudad;
@@ -79,7 +110,9 @@
             document.getElementById("titulo2").innerHTML = persona1.est.estudio2.titulo;
             document.getElementById("lugar1").innerHTML = persona1.est.estudio1.lugar + ", " + persona1.est.estudio1.fecha;
             document.getElementById("titulo1").innerHTML = persona1.est.estudio1.titulo;
-            document.getElementById("conocimientos").innerHTML = persona1.hab;
+            document.getElementById("conocimientos0").innerHTML = persona1.hab["0"];
+            document.getElementById("conocimientos1").innerHTML = persona1.hab["1"];
+            document.getElementById("conocimientos2").innerHTML = persona1.hab["2"];
     </script>
     
 </body>
