@@ -4,84 +4,272 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="proyecto_final.css">
     <title>Proyecto Final Front end Academy</title>
 </head>
 <body>
    <!--Proyecto realizado por Rodrigo Nicolás Romero-->
-    <header><h1>CREA TU CV FÁCIL Y SENCILLO</h1></header>
-    <nav>
-    <p>En el siguiente ejemplo, te mostraremos de lo que es capaz de realizar nuestra página con solo ingresar tus datos más adelante.</p>
+<header><h1>CREA TU CV FÁCIL Y SENCILLO</h1></header>
+<nav>
+<p>En el siguiente ejemplo, te mostraremos de lo que es capaz de realizar nuestra página con solo ingresar tus datos más adelante.</p>
 
-    <h2 id="nombre"></h2>
-    <p id="edad"></p>
-    <p id="direccion"></p>
-    <p id="celular"></p>
-    <p id="correo"></p>
+<div><img width="150" height="150" src="cv.jpg" alt="No se pudo cargar la foto"/>
+<h2 id="nombre"></h2> 
+<p id="edad"></p>
+<p id="direccion"></p>
+<p id="celular"></p>
+<p id="correo"></p></div>
     <h2>EXPERIENCIA</h2>
-    <h3 id="trabajo3"></h3>
-    <h4 id="puestoT3"></h4>
-    <li id="tareasT30"></li>
-    <li id="tareasT31"></li>
-    <li id="tareasT32"></li>
-    <h3 id="trabajo2"></h3>
-    <h4 id="puestoT2"></h4>
-    <li id="tareasT20"></li>
-    <li id="tareasT21"></li>
-    <li id="tareasT22"></li>
-    <h3 id="trabajo1"></h3>
-    <h4 id="puestoT1"></h4>
-    <li id="tareasT10"></li>
-    <li id="tareasT11"></li>
-    <li id="tareasT12"></li>
-    <li id="tareasT13"></li>
+<h3 id="trabajo3"></h3>
+<h4 id="puestoT3"></h4>
+<li id="tareasT30"></li>
+<li id="tareasT31"></li>
+<li id="tareasT32"></li>
+<h3 id="trabajo2"></h3>
+<h4 id="puestoT2"></h4>
+<li id="tareasT20"></li>
+<li id="tareasT21"></li>
+<li id="tareasT22"></li>
+<h3 id="trabajo1"></h3>
+<h4 id="puestoT1"></h4>
+<li id="tareasT10"></li>
+<li id="tareasT11"></li>
+<li id="tareasT12"></li>
+<li id="tareasT13"></li>
     <h2>ESTUDIOS</h2>
-    <h3 id="lugar2"></h3>
-    <p id="titulo2"></p>
-    <h3 id="lugar1"></h3>
-    <p id="titulo1"></p>
+<h3 id="lugar2"></h3>
+<p id="titulo2"></p>
+<h3 id="lugar1"></h3>
+<p id="titulo1"></p>
     <h2>CONOCIMIENTOS</h2>
-    <li id="conocimientos0"></li>
-    <li id="conocimientos1"></li>
-    <li id="conocimientos2"></li>
-    </nav>
+<li id="conocimientos0"></li>
+<li id="conocimientos1"></li>
+<li id="conocimientos2"></li>
+</nav>
+
+<h2>Completa los siguientes espacios:</h2>
+    
+<form>
+    <h3>Datos personales</h3>
+<div><label>Nombre y apellido
+<input type="text" id="nombrecv" placeholder="Nombre" maxlength="15" required> 
+<input type="text" id="apellidocv" placeholder="Apellido" maxlength="15" required>
+</label></div>
+<div><label>Cantidad de años
+<input type="text" id="anioscv" placeholder="Años" minlength="2" maxlength="2" required>
+</label></div>
+<div><label>Dirección de su domicilio
+<input type="text" id="direccioncv" placeholder="Dirección" required>  
+<input type="text" id="ciudadcv" placeholder="Ciudad" required>
+</label></div>
+<div><label>Número de celular
+<input type="number" id="celularcv" placeholder="Celular" minlength="8" maxlength="10" required>
+</label></div>
+<div><label>Correo electrónico
+<input type="email" id="correocv" placeholder="Correo" required>
+</label></div>
+    <h3>Experiencia</h3>
+<input type="checkbox" id="sinexp" src="agregar.js" style="display: block;"><label for="sinexp">Sin experiencia</label>
+<span id="sinexp1"><div><label>Lugar de trabajo y tiempo trabajado
+<input type="text" id="trabajolugar1" placeholder="Establecimiento">
+</label></div>
+<div><label>Desde
+<input type="month" id="trabajofechain1" placeholder="Fecha iniciada" min="1900" max="2023">
+</label>
+<label>Hasta
+<input type="month" id="trabajofechafi1" placeholder="Fecha terminada" min="1900" max="2023">
+</label></div>
+<div><label>Puesto de trabajo
+<input type="text" id="puestocv1" placeholder="Puesto" required>
+</label></div>
+<div><label>Tareas a realizar
+<ul><input type="text" id="tareacv10" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+<input type="text" id="tareacv11" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+<input type="text" id="tareacv12" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+<input type="text" id="tareacv13" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero"></ul>
+<button type="button" id="tareanueva10" style="display: block;">Agregar una tarea<script src="agregar.js"></script></button>
+<button type="button" id="tareanueva11" style="display: none;">Agregar una tarea<script src="agregar.js"></script></button>
+<button type="button" id="tareanueva12" style="display: none;">Agregar una tarea<script src="agregar.js"></script></button>
+<button type="button" id="tareaquitar10" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+<button type="button" id="tareaquitar11" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+<button type="button" id="tareaquitar12" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+</label></div>
+        <span style="display: none;" id="otrotrabajo1"><div><label>Lugar de trabajo y tiempo trabajado
+        <input type="text" id="trabajolugar2" placeholder="Establecimiento">
+        <div><label>Desde
+        <input type="month" id="trabajofechain2" placeholder="Fecha iniciada" min="1900" max="2023">
+        </label>
+        <label>Hasta
+        <input type="month" id="trabajofechafi2" placeholder="Fecha terminada" min="1900" max="2023">
+        </label></div>
+        </label></div>
+        <div><label>Puesto de trabajo
+        <input type="text" id="puestocv2" placeholder="Puesto" required>
+        </label></div>
+        <div><label>Tareas a realizar
+            <ul><input type="text" id="tareacv20" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+            <input type="text" id="tareacv21" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+            <input type="text" id="tareacv22" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+            <input type="text" id="tareacv23" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero"></ul>
+            <button type="button" id="tareanueva20" style="display: block;">Agregar una tarea<script src="agregar.js"></script></button>
+            <button type="button" id="tareanueva21" style="display: none;">Agregar una tarea<script src="agregar.js"></script></button>
+            <button type="button" id="tareanueva22" style="display: none;">Agregar una tarea<script src="agregar.js"></script></button>
+            <button type="button" id="tareaquitar20" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+            <button type="button" id="tareaquitar21" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+            <button type="button" id="tareaquitar22" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+        </label></div></span>
+                <span style="display: none;" id="otrotrabajo2"><div><label>Lugar de trabajo y tiempo trabajado
+                <input type="text" id="trabajolugar3" placeholder="Establecimiento">
+                <div><label>Desde
+                <input type="month" id="trabajofechain3" placeholder="Fecha iniciada" min="1900" max="2023">
+                </label>
+                <label>Hasta
+                <input type="month" id="trabajofechafi3" placeholder="Fecha terminada" min="1900" max="2023">
+                </label></div>
+                </label></div>
+                <div><label>Puesto de trabajo
+                <input type="text" id="puestocv3" placeholder="Puesto" required>
+                </label></div>
+                <div><label>Tareas a realizar
+                    <ul><input type="text" id="tareacv30" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+                    <input type="text" id="tareacv31" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+                    <input type="text" id="tareacv32" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero">
+                    <input type="text" id="tareacv33" style="display: none;" placeholder="Ej: Atención a clientes, Bachero, Cocinero"></ul>
+                    <button type="button" id="tareanueva30" style="display: block;">Agregar una tarea<script src="agregar.js"></script></button>
+                    <button type="button" id="tareanueva31" style="display: none;">Agregar una tarea<script src="agregar.js"></script></button>
+                    <button type="button" id="tareanueva32" style="display: none;">Agregar una tarea<script src="agregar.js"></script></button>
+                    <button type="button" id="tareaquitar30" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+                    <button type="button" id="tareaquitar31" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+                    <button type="button" id="tareaquitar32" style="display: none;">Quitar una tarea<script src="agregar.js"></script></button>
+                </label></div></span>
+<div><button type="button" id="puestonuevo">Agregar otro trabajo<script src="agregar.js"></script></button>
+<button type="button" id="puestonuevo1" style="display: none;">Agregar otro trabajo<script src="agregar.js"></script></button>
+<button type="button" id="puestoquitar" style="display: none;">Quitar un trabajo<script src="agregar.js"></script></button>
+<button type="button" id="puestoquitar1" style="display: none;">Quitar un trabajo<script src="agregar.js"></script></button>
+</div></span>
+    <h3>Estudios</h3>
+<div><label>Lugar de la cursada
+<input type="text" id="estudiolugar1" placeholder="Establecimiento">
+</label></div>
+<div><label>Fecha cursada
+<input type="number" id="cursofechain1" size="10" placeholder="Año iniciado" max="2023" min="1900" maxlength="4" >
+<input type="number" id="cursofechafi1" size="10" placeholder="Año finalizado" max="2023" min="1900" maxlength="4" >
+</label></div>
+<div><label>Título
+<input type="text" id="titulocv1" placeholder="Título recibido">
+</label></div>
+        <div style="display: none;" id="otroestudio10"><label>Lugar de la cursada
+        <input type="text" id="estudiolugar2" placeholder="Establecimiento">
+        </label></div>
+        <div style="display: none;" id="otroestudio11"><label>Fecha cursada
+        <input type="number" id="cursofechain2" size="8" placeholder="Año iniciado"  max="2023" min="1900" maxlength="4">
+        <input type="number" id="cursofechafi2" size="8" placeholder="Año finalizado"  max="2023" min="1900" maxlength="4">
+        </label></div>
+        <div style="display: none;" id="otroestudio12"><label>Título
+        <input type="text" id="titulocv2" placeholder="Título recibido">
+        </label></div>
+                <div style="display: none;" id="otroestudio20"><label>Lugar de la cursada
+                <input type="text" id="estudiolugar3" placeholder="Establecimiento">
+                </label></div>
+                <div style="display: none;" id="otroestudio21"><label>Fecha cursada
+                <input type="number" id="cursofechain3" size="8" placeholder="Año iniciado"  max="2023" min="1900" maxlength="4" >
+                <input type="number" id="cursofechafi3" size="8" placeholder="Año finalizado"  max="2023" min="1900" maxlength="4" >
+                </label></div>
+                <div style="display: none;" id="otroestudio22"><label>Título
+                <input type="text" id="titulocv3" placeholder="Título recibido">
+                </label></div>
+<span><button type="button" id="cursonuevo">Agregar un estudio<script src="agregar.js"></script></button>
+<button type="button" id="cursonuevo1" style="display: none;">Agregar un estudio<script src="agregar.js"></script></button>
+<button type="button" id="cursoquitar" style="display: none;">Quitar un estudio<script src="agregar.js"></script></button>
+<button type="button" id="cursoquitar1" style="display: none;">Quitar un estudio<script src="agregar.js"></script></button></span>
+    <h3>Conocimientos</h3>
+<p><input type="text" id="conocimientocv1" placeholder="Ej: Impresora, Computadora, Excel, Word"></p>
+<p><input type="text" id="conocimientocv2" style="display: none;" placeholder="Ej: Impresora, Computadora, Excel, Word"></p>
+<p><input type="text" id="conocimientocv3" style="display: none;" placeholder="Ej: Impresora, Computadora, Excel, Word"></p>
+<p><input type="text" id="conocimientocv4" style="display: none;" placeholder="Ej: Impresora, Computadora, Excel, Word"></p>
+<button type="button" id="conocimientonuevo1" style="display: block;">Agregar un conocimiento<script src="agregar.js"></script></button>
+<button type="button" id="conocimientonuevo2" style="display: none;">Agregar un conocimiento<script src="agregar.js"></script></button>
+<button type="button" id="conocimientonuevo3" style="display: none;">Agregar un conocimiento<script src="agregar.js"></script></button>
+<button type="button" id="conocimientoquitar1" style="display: none;">Quitar un conocimiento<script src="agregar.js"></script></button>
+<button type="button" id="conocimientoquitar2" style="display: none;">Quitar un conocimiento<script src="agregar.js"></script></button>
+<button type="button" id="conocimientoquitar3" style="display: none;">Quitar un conocimiento<script src="agregar.js"></script></button>
+<button type="button" id="realizarcv">Realizar CV</button>
+</form>
+<!-- Resultado del CV -->
+    <div id="contenedorResultado" style="display: none;">
+    <h2 id="nombreok"><script src="eventos.js"></script></h2>
+    <p id="edadok"><script src="eventos.js"></script></p>
+    <p id="direccionok"><script src="eventos.js"></script></p>
+    <p id="celularok"><script src="eventos.js"></script></p>
+    <p id="correook"><script src="eventos.js"></script></p>
+    <span id="sinexpcv"> <h2>EXPERIENCIA</h2>
+    <h3 id="trabajook1"><script src="eventos.js"></script></h3>
+    <h4 id="puestook1"><script src="eventos.js"></script></h4>
+    <p id="tareasok10"><script src="eventos.js"></script></p>
+    <p id="tareasok11" style="display: none;"><script src="eventos.js"></script></p>
+    <p id="tareasok12" style="display: none;"><script src="eventos.js"></script></p>
+    <p id="tareasok13" style="display: none;"><script src="eventos.js"></script></p>
+        <h3 id="trabajook2" style="display: none;"><script src="eventos.js"></script></h3>
+        <h4 id="puestook2" style="display: none;"><script src="eventos.js"></script></h4>
+        <p id="tareasok20">° <script src="eventos.js"></script></p>
+        <p id="tareasok21" style="display: none;"><script src="eventos.js"></script></p>
+        <p id="tareasok22" style="display: none;"><script src="eventos.js"></script></p>
+        <p id="tareasok23" style="display: none;"><script src="eventos.js"></script></p>
+            <h3 id="trabajook3" style="display: none;"><script src="eventos.js"></script></h3>
+            <h4 id="puestook3" style="display: none;"><script src="eventos.js"></script></h4>
+            <p id="tareasok30">° <script src="eventos.js"></script></p>
+            <p id="tareasok31" style="display: none;"><script src="eventos.js"></script></p>
+            <p id="tareasok32" style="display: none;"><script src="eventos.js"></script></p>
+            <p id="tareasok33" style="display: none;"><script src="eventos.js"></script></p>
+    </span><h2>ESTUDIOS</h2>
+    <h3 id="lugarok1"><script src="eventos.js"></script></h3>
+    <p id="titulook1"><script src="eventos.js"></script></p>
+        <h3 style="display: none;" id="lugarok2"><script src="eventos.js"></script></h3>
+        <p style="display: none;" id="titulook2"><script src="eventos.js"></script></p>
+            <h3 style="display: none;" id="lugarok3"><script src="eventos.js"></script></h3>
+            <p style="display: none;" id="titulook3"><script src="eventos.js"></script></p>
+        <h2>CONOCIMIENTOS</h2>
+    <p id="conocimientook1"><script src="eventos.js"></script></p>
+    <p id="conocimientook2" style="display: none;"><script src="eventos.js"></script></p>
+    <p id="conocimientook3" style="display: none;"><script src="eventos.js"></script></p>
+    <p id="conocimientook4" style="display: none;"><script src="eventos.js"></script></p>
 
     <script>
         const persona1 = {
-                        info:{nombre:"Nicolas", 
-                                apellido:"Romero", 
-                                edad:"27", 
-                                ciudad:"Lanus", 
-                                direccion:"Bv. de los Italianos 1287", 
-                                celular:"1164046773", 
-                                correo:"nicolas.romero.2165@gmail.com"},
-                        exp:{trabajo3:{
-                                    lugar:"Amoblamientos Pane", 
-                                    fecha: "Sep 2020 - Dic 2022", 
-                                    puesto:"Chofer", 
-                                    tareas:["Fletes"," Atención a clientes"," Cadete",]},
-                            trabajo2:{
-                                    lugar:"La Camorra", 
-                                    fecha: "Abr 2018 - Ago 2020", 
-                                    puesto:"Mesero", 
-                                    tareas:["Mesero"," Atención y servicio a clientes", " Bachero",]},
-                            trabajo1:{
-                                    lugar:"Agencia Hípica La Tablada", 
-                                    fecha: "Mar 2016 - Mar 2018", 
-                                    puesto:"Encargado del bufet", 
-                                    tareas:["Cajero y administrador"," Atención y servicio a clientes"," Barista"," Ayudante de cocina y bachero",]},},
-                        est:{
-                            estudio2:{
-                                lugar:"Liceo Británico - sede Lanus",
-                                fecha:"2018 - 2022",
-                                titulo:"Nivel 8 Completado"},
-                            estudio1:{
-                                lugar:"San Vicente de Paúl",
-                                fecha:"2006 - 2018",
-                                titulo:"Bachiller en Ciencias Naturales"}},
-                        hab:["Amplio manejo del paquete Office: Word y Excel"," Inglés Intermedio"," Equipo de cómputo: Sistema operativo, hardware, impresora"],
-                    };
-            console.log(persona1)
+                info:{nombre:"Nicolas", 
+                        apellido:"Romero", 
+                        edad:"27", 
+                        ciudad:"Lanus", 
+                        direccion:"Bv. de los Italianos 1287", 
+                        celular:"1164046773", 
+                        correo:"nicolas.romero.2165@gmail.com"},
+                exp:{trabajo3:{
+                        lugar:"Amoblamientos Pane", 
+                        fecha: "2020-09 | 2022-12", 
+                        puesto:"Chofer", 
+                        tareas:["Fletes"," Atención a clientes"," Cadete",]},
+                    trabajo2:{
+                        lugar:"La Camorra", 
+                        fecha: "2018-04 | 2020-08", 
+                        puesto:"Mesero", 
+                        tareas:["Mesero"," Atención y servicio a clientes", " Bachero",]},
+                    trabajo1:{
+                        lugar:"Agencia Hípica La Tablada", 
+                        fecha: "2016-03 | 2018-03", 
+                        puesto:"Encargado del bufet", 
+                        tareas:["Cajero y administrador"," Atención y servicio a clientes"," Barista"," Ayudante de cocina y bachero",]},},
+                est:{
+                    estudio2:{
+                        lugar:"Liceo Británico - sede Lanus",
+                        fecha:"2018 | 2022",
+                        titulo:"Nivel 8 Completado"},
+                    estudio1:{
+                        lugar:"San Vicente de Paúl",
+                        fecha:"2006 | 2018",
+                        titulo:"Bachiller en Ciencias Naturales"}},
+                hab:["Amplio manejo del paquete Office: Word y Excel"," Inglés Intermedio"," Equipo de cómputo: Sistema operativo, hardware, impresora"],
+            };
+        console.log(persona1)
 
         const persona = JSON.stringify(persona1)
 
