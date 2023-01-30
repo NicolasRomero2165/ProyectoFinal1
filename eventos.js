@@ -93,9 +93,7 @@ document.getElementById('realizarcv').addEventListener('click', function(){
     console.log("Sus conocimientos son "+concv3);
     let concv4 = document.getElementById('conocimientocv4').value;
     console.log("Sus conocimientos son "+concv4);
-
-    
-    
+        
 document.getElementById('nombreok').innerHTML = nomcv + " " + apecv;
 document.getElementById('edadok').innerHTML = anicv + " años";
 document.getElementById('direccionok').innerHTML = dircv + ", " + ciucv;
@@ -107,20 +105,18 @@ document.getElementById('correook').innerHTML = corcv;
     document.getElementById('tareasok11').innerHTML = "° " + tarcv11;
     document.getElementById('tareasok12').innerHTML = "° " + tarcv12;
     document.getElementById('tareasok13').innerHTML = "° " + tarcv13;
-    document.getElementById('tareasok20').innerHTML = "° " + tarcv20;
-    document.getElementById('tareasok21').innerHTML = "° " + tarcv21;
-    document.getElementById('tareasok22').innerHTML = "° " + tarcv22;
-    document.getElementById('tareasok23').innerHTML = "° " + tarcv23;
-    document.getElementById('tareasok30').innerHTML = "° " + tarcv30;
-    document.getElementById('tareasok31').innerHTML = "° " + tarcv31;
-    document.getElementById('tareasok32').innerHTML = "° " + tarcv32;
-    document.getElementById('tareasok33').innerHTML = "° " + tarcv33;
         document.getElementById('trabajook2').innerHTML = tralugar2 + ", " + trafechain2 + " | " + trafechafi2;
         document.getElementById('puestook2').innerHTML = puecv2;
-        document.getElementById('tareasok20').innerHTML = tarcv20;
+        document.getElementById('tareasok20').innerHTML = "° " + tarcv20;
+        document.getElementById('tareasok21').innerHTML = "° " + tarcv21;
+        document.getElementById('tareasok22').innerHTML = "° " + tarcv22;
+        document.getElementById('tareasok23').innerHTML = "° " + tarcv23;
             document.getElementById('trabajook3').innerHTML = tralugar3 + ", " + trafechain3 + " | " + trafechafi3;
             document.getElementById('puestook3').innerHTML = puecv3;
-            document.getElementById('tareasok30').innerHTML = tarcv30;
+            document.getElementById('tareasok30').innerHTML = "° " + tarcv30;
+            document.getElementById('tareasok31').innerHTML = "° " + tarcv31;
+            document.getElementById('tareasok32').innerHTML = "° " + tarcv32;
+            document.getElementById('tareasok33').innerHTML = "° " + tarcv33;
     document.getElementById('lugarok1').innerHTML = estlugar1 + ", " + curfechain1 + " | " + curfechafi1;
     document.getElementById('titulook1').innerHTML = titcv1;
         document.getElementById('lugarok2').innerHTML = estlugar2 + ", " + curfechain2 + " | " + curfechafi2;
@@ -133,4 +129,71 @@ document.getElementById('correook').innerHTML = corcv;
     document.getElementById('conocimientook4').innerHTML = "° " + concv4;   
 
     document.getElementById('contenedorResultado').style.display = 'block';
+    document.getElementById('botonescolor').style.display = 'block';
+});
+
+document.getElementById('colorblanco').addEventListener('click', function(){
+    document.getElementById('nombreok').style.backgroundColor = 'rgb(120, 120, 120)';
+    document.getElementById('experienciacv').style.backgroundColor = 'rgb(120, 120, 120)';
+    document.getElementById('estudioscv').style.backgroundColor = 'rgb(120, 120, 120)';
+    document.getElementById('conocimientoscv').style.backgroundColor = 'rgb(120, 120, 120)';
+    document.getElementById('trabajook1').style.backgroundColor = 'rgb(160, 160, 160)';
+    document.getElementById('trabajook2').style.backgroundColor = 'rgb(160, 160, 160)';
+    document.getElementById('trabajook3').style.backgroundColor = 'rgb(160, 160, 160)';
+    document.getElementById('lugarok1').style.backgroundColor = 'rgb(160, 160, 160)';
+    document.getElementById('lugarok2').style.backgroundColor = 'rgb(160, 160, 160)';
+    document.getElementById('lugarok3').style.backgroundColor = 'rgb(160, 160, 160)';
+    document.getElementById('puestook1').style.backgroundColor = 'rgb(200, 200, 200)';
+    document.getElementById('puestook2').style.backgroundColor = 'rgb(200, 200, 200)';
+    document.getElementById('puestook3').style.backgroundColor = 'rgb(200, 200, 200)';
+    document.getElementById('contenedorResultado').style.backgroundColor = 'rgb(255, 255, 255)';
+});
+
+document.getElementById('colorrojo').addEventListener('click', function(){
+    document.getElementById('nombreok').style.backgroundColor = 'rgb(230, 10, 10)';
+    document.getElementById('experienciacv').style.backgroundColor = 'rgb(230, 10, 10)';
+    document.getElementById('estudioscv').style.backgroundColor = 'rgb(230, 10, 10)';
+    document.getElementById('conocimientoscv').style.backgroundColor = 'rgb(230, 10, 10)';
+    document.getElementById('trabajook1').style.backgroundColor = 'rgb(255, 80, 80)';
+    document.getElementById('trabajook2').style.backgroundColor = 'rgb(255, 80, 80)';
+    document.getElementById('trabajook3').style.backgroundColor = 'rgb(255, 80, 80)';
+    document.getElementById('lugarok1').style.backgroundColor = 'rgb(255, 80, 80)';
+    document.getElementById('lugarok2').style.backgroundColor = 'rgb(255, 80, 80)';
+    document.getElementById('lugarok3').style.backgroundColor = 'rgb(255, 80, 80)';
+    document.getElementById('puestook1').style.backgroundColor = 'rgb(255, 130, 130)';
+    document.getElementById('puestook2').style.backgroundColor = 'rgb(255, 130, 130)';
+    document.getElementById('puestook3').style.backgroundColor = 'rgb(255, 130, 130)';
+    document.getElementById('contenedorResultado').style.backgroundColor = 'rgb(255, 200, 200)';
+});
+document.getElementById('colorverde').addEventListener('click', function(){
+    document.getElementById('nombreok').style.backgroundColor = 'rgb(10, 170, 10)';
+    document.getElementById('experienciacv').style.backgroundColor = 'rgb(10, 170, 10)';
+    document.getElementById('estudioscv').style.backgroundColor = 'rgb(10, 170, 10)';
+    document.getElementById('conocimientoscv').style.backgroundColor = 'rgb(10, 170, 10)';
+    document.getElementById('trabajook1').style.backgroundColor = 'rgb(80, 255, 80)';
+    document.getElementById('trabajook2').style.backgroundColor = 'rgb(80, 255, 80)';
+    document.getElementById('trabajook3').style.backgroundColor = 'rgb(80, 255, 80)';
+    document.getElementById('lugarok1').style.backgroundColor = 'rgb(80, 255, 80)';
+    document.getElementById('lugarok2').style.backgroundColor = 'rgb(80, 255, 80)';
+    document.getElementById('lugarok3').style.backgroundColor = 'rgb(80, 255, 80)';
+    document.getElementById('puestook1').style.backgroundColor = 'rgb(130, 255, 130)';
+    document.getElementById('puestook2').style.backgroundColor = 'rgb(130, 255, 130)';
+    document.getElementById('puestook3').style.backgroundColor = 'rgb(130, 255, 130)';
+    document.getElementById('contenedorResultado').style.backgroundColor = 'rgb(200, 255, 200)';
+});
+document.getElementById('colorazul').addEventListener('click', function(){
+    document.getElementById('nombreok').style.backgroundColor = 'rgb(10, 10, 220)';
+    document.getElementById('experienciacv').style.backgroundColor = 'rgb(10, 10, 220)';
+    document.getElementById('estudioscv').style.backgroundColor = 'rgb(10, 10, 220)';
+    document.getElementById('conocimientoscv').style.backgroundColor = 'rgb(10, 10, 220)';
+    document.getElementById('trabajook1').style.backgroundColor = 'rgb(80, 80, 255)';
+    document.getElementById('trabajook2').style.backgroundColor = 'rgb(80, 80, 255)';
+    document.getElementById('trabajook3').style.backgroundColor = 'rgb(80, 80, 255)';
+    document.getElementById('lugarok1').style.backgroundColor = 'rgb(80, 80, 255)';
+    document.getElementById('lugarok2').style.backgroundColor = 'rgb(80, 80, 255)';
+    document.getElementById('lugarok3').style.backgroundColor = 'rgb(80, 80, 255)';
+    document.getElementById('puestook1').style.backgroundColor = 'rgb(130, 130, 255)';
+    document.getElementById('puestook2').style.backgroundColor = 'rgb(130, 130, 255)';
+    document.getElementById('puestook3').style.backgroundColor = 'rgb(130, 130, 255)';
+    document.getElementById('contenedorResultado').style.backgroundColor = 'rgb(200, 200, 255)';
 });

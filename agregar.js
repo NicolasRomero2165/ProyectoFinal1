@@ -7,6 +7,7 @@ document.getElementById('puestonuevo').addEventListener('click', function(){
     document.getElementById('trabajook2').style.display = 'block';
     document.getElementById('puestook2').style.display = 'block';
     document.getElementById('tareasok20').style.display = 'block';
+    document.getElementById('trabajonuevo1').style.display = 'block';
 });
 document.getElementById('puestonuevo1').addEventListener('click', function(){
     document.getElementById('otrotrabajo2').style.display = 'block';
@@ -15,6 +16,7 @@ document.getElementById('puestonuevo1').addEventListener('click', function(){
     document.getElementById('trabajook3').style.display = 'block';
     document.getElementById('puestook3').style.display = 'block';
     document.getElementById('tareasok30').style.display = 'block';
+    document.getElementById('trabajonuevo2').style.display = 'block';
 });
 document.getElementById('puestoquitar').addEventListener('click', function(){
     document.getElementById('otrotrabajo1').style.display = 'none';
@@ -24,6 +26,7 @@ document.getElementById('puestoquitar').addEventListener('click', function(){
     document.getElementById('trabajook2').style.display = 'none';
     document.getElementById('puestook2').style.display = 'none';
     document.getElementById('tareasok20').style.display = 'none';
+    document.getElementById('trabajonuevo1').style.display = 'none';
 });
 document.getElementById('puestoquitar1').addEventListener('click', function(){
     document.getElementById('otrotrabajo2').style.display = 'none';
@@ -32,6 +35,7 @@ document.getElementById('puestoquitar1').addEventListener('click', function(){
     document.getElementById('trabajook3').style.display = 'none';
     document.getElementById('puestook3').style.display = 'none';
     document.getElementById('tareasok30').style.display = 'none';
+    document.getElementById('trabajonuevo2').style.display = 'none';
 });
 /* Botón de curso */
 document.getElementById('cursonuevo').addEventListener('click', function(){
